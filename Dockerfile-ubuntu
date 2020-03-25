@@ -1,0 +1,6 @@
+FROM python:3.8-buster
+RUN pip install beautifulsoup4 discord.py
+ENV TOKEN=''
+WORKDIR /usr/src/app
+COPY . /usr/src/app
+CMD ["python", "-u", "main.py"]

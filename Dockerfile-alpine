@@ -1,0 +1,7 @@
+FROM python:3.8-alpine
+RUN apk add gcc musl-dev tmux
+RUN pip install beautifulsoup4 discord.py
+ENV TOKEN=''
+WORKDIR /usr/src/app
+COPY . /usr/src/app
+CMD ["python", "-u", "main.py"]
