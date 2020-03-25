@@ -4,7 +4,7 @@ from itertools import cycle
 import os
 
 
-TOKEN = 'xxx'
+TOKEN = os.getenv('TOKEN')
 status = cycle(['Final Fantasy VIII', 'Super Mario 3', 'Tibia', 'Medivia', 'World of Warcraft'])
 client = commands.Bot(
     command_prefix = 'med.',
