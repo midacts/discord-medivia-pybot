@@ -90,7 +90,7 @@ class Medivia(commands.Cog):
     ###########
     ## LISTS ##
     ###########
-    # Commands: Show lists
+    # Commands: Get lists
     @commands.command()
     async def get_lists(self, ctx):
         guild = ctx.guild.name
